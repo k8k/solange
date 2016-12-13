@@ -1,0 +1,9 @@
+{
+  "name": "solange",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "node-notifier": "^4.6.1",
+    "request": "^2.79.0"
+  }
+}
