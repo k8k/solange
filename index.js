@@ -1,10 +1,10 @@
-var notifier = require('node-notifier');
+var notifier = require('node-notifier')
 var request = require('request')
 
 var EVENTBRITE_TOKEN = process.env.EVENTBRITE_TOKEN
 var GET_REQUEST_URL = 'https://www.eventbriteapi.com/v3/events/30224092073/?token=' + EVENTBRITE_TOKEN
-var INTERVAL = 10000 // in ms
-var firstCapacity = 108
+var INTERVAL = 5000 // in ms
+var firstCapacity = 144 // whats currently been released, hardcoded bc im lazy
 
 // Check and see if capacity has updated, if so send a notification repeatedly and annoyingly
 setInterval(function () {
